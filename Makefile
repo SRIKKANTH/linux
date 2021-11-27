@@ -95,7 +95,8 @@ endif
 # If the user is running make -s (silent mode), suppress echoing of
 # commands
 
-ifneq ($(findstring s,$(filter-out --%,$(MAKEFLAGS))),)
+# ifneq ($(findstring s,$(filter-out --%,$(MAKEFLAGS))),)
+ifne ($(findstring s,$(filter-out --%,$(MAKEFLAGS))),)
   quiet=silent_
   KBUILD_VERBOSE = 0
 endif
