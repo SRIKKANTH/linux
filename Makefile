@@ -18,7 +18,7 @@ $(if $(filter __%, $(MAKECMDGOALS)), \
 # That's our default target when none is given on the command line
 PHONY := __all
 __all:
-     
+        
 # We are using a recursive build, so we need to do a little thinking
 # to get the ordering right.
 #
